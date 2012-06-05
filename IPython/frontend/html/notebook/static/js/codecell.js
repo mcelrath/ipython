@@ -39,6 +39,8 @@ var IPython = (function (IPython) {
             indentUnit : 4,
             mode: 'python',
             theme: 'ipython',
+            matchBrackets: true,
+            indentWithTabs: true,
             readOnly: this.read_only,
             onKeyEvent: $.proxy(this.handle_codemirror_keyevent,this)
         });
