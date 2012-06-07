@@ -14,7 +14,7 @@ var IPython = (function (IPython) {
     // TextCell base class
 
     var TextCell = function () {
-        this.code_mirror_mode = this.code_mirror_mode || 'htmlmixed';
+        this.code_mirror_mode = this.code_mirror_mode || 'markdown';
         IPython.Cell.apply(this, arguments);
         this.rendered = false;
         this.cell_type = this.cell_type || 'text';
